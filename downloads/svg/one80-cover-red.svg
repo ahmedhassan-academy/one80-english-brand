@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="624" viewBox="0 0 1640 624" role="img" aria-label="One80 English Facebook cover, red">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap');.wm{font-family:'Outfit','Segoe UI',Arial,sans-serif;}</style>
+  <rect width="1640" height="624" fill="#E31B23"/>
+  <g transform="translate(489,104) scale(1.8)">
+    <g stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+    <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#142457" stroke-width="5" stroke-linecap="round"/>
+    <line x1="78" y1="96" x2="124" y2="98.5" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="78" cy="96" r="6.5" fill="#142457"/><circle cx="78" cy="96" r="2.3" fill="#E31B23"/>
+    <text class="wm" x="8" y="116" font-size="12.5" font-weight="600" fill="#FBD0D2">0</text>
+    <text class="wm" x="118" y="116" font-size="12.5" font-weight="700" fill="#142457">180</text>
+    <text class="wm" x="190" y="92" font-size="50" font-weight="500" fill="#FFFFFF">One<tspan font-weight="700" fill="#142457">80</tspan></text>
+    <text class="wm" x="192" y="116" font-size="13" letter-spacing="7" font-weight="500" fill="#FBD0D2">ENGLISH</text>
+  </g>
+  <text class="wm" x="820" y="430" font-size="38" font-weight="500" fill="#FFE3E4" text-anchor="middle">Turn your English around — a full 180°.</text>
+</svg>

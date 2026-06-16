@@ -103,6 +103,9 @@
   .scard .cover img{width:100%;display:block}
   .scard .cap{font:700 14px Outfit;color:var(--navy)}
   .scard .dim{font:500 12px Outfit;color:var(--muted);margin-top:-8px}
+  .pfprow{display:flex;gap:26px;flex-wrap:wrap;justify-content:center}
+  .pcol{display:flex;flex-direction:column;align-items:center;gap:9px}
+  .pcol .dim{margin-top:0}
 </style>
 </head>
 <body>
@@ -283,20 +286,18 @@
     <h2>Ready for Instagram &amp; Facebook.</h2>
     <p class="lead">Profile pictures sized for the circular crop, plus a Facebook cover with the lockup kept in the mobile safe area.</p>
     <div class="social">
-      <div class="scard">
-        <div class="pfp"><img src="../downloads/png/one80-instagram-profile-1080.png" alt="Instagram profile picture"></div>
-        <div class="cap">Instagram profile</div>
-        <div class="dim">1080 × 1080</div>
-      </div>
-      <div class="scard">
-        <div class="pfp"><img src="../downloads/png/one80-facebook-profile-1080.png" alt="Facebook profile picture"></div>
-        <div class="cap">Facebook profile</div>
-        <div class="dim">1080 × 1080</div>
+      <div class="scard full">
+        <div class="pfprow">
+          <div class="pcol"><div class="pfp"><img src="../downloads/png/one80-instagram-profile-1080.png" alt="navy"></div><div class="dim">Navy</div></div>
+          <div class="pcol"><div class="pfp" style="border:1px solid var(--line)"><img src="../downloads/png/one80-profile-white-1080.png" alt="white"></div><div class="dim">White</div></div>
+          <div class="pcol"><div class="pfp"><img src="../downloads/png/one80-profile-blue-1080.png" alt="blue"></div><div class="dim">Blue</div></div>
+          <div class="pcol"><div class="pfp"><img src="../downloads/png/one80-profile-red-1080.png" alt="red"></div><div class="dim">Red</div></div>
+        </div>
+        <div class="cap">Profile picture — Instagram &amp; Facebook · 1080 × 1080</div>
       </div>
       <div class="scard full">
         <div class="cover"><img src="../downloads/png/one80-facebook-cover-1640.png" alt="Facebook cover photo"></div>
-        <div class="cap">Facebook cover</div>
-        <div class="dim">1640 × 624</div>
+        <div class="cap">Facebook cover — 1640 × 624 · also in white, blue &amp; red</div>
       </div>
     </div>
     <p class="lead" style="margin-top:22px">Download these from the <a href="../downloads/" style="color:var(--red);font-weight:600;text-decoration:none">logo downloads page →</a></p>
