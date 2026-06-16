@@ -1,0 +1,139 @@
+<!doctype html><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+ :root{--navy:#1F3A5F;--coral:#E8552F;--muted:#6B7886;--bg:#f4f2ec;--line:#e4e0d8}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);font-family:Outfit,Arial;color:#13212f}
+ h1{font-size:22px;margin:0;padding:26px 30px 4px}
+ .sub{color:var(--muted);padding:0 30px 18px;font-size:13.5px;max-width:820px;line-height:1.55}
+ .row{display:flex;gap:18px;flex-wrap:wrap;padding:0 30px 8px}
+ .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 26px;flex:1 1 380px}
+ .lbl{font:600 11px Outfit;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+ .lbl.before{color:#b6402a}
+ .lbl.after{color:#1F3A5F}
+ .mini{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;padding:6px 30px 34px}
+ .tile{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+ .tile small{display:block;color:var(--muted);font:600 10px Outfit;margin-top:10px;letter-spacing:.05em}
+ svg{display:block}
+</style>
+
+<h1>One80 English — fuel-gauge mark, optimized</h1>
+<div class="sub">Premium / adult / English-only. One idea: <b>transformation, 0 → 180</b>. Optimizations: needle <b>pegged hard at 180</b> (it floated ~10° short before), a clearly-visible <b>coral fill ring</b> shows the full 0→180 journey inside a navy bezel, refined weights + an outer tick bezel for an instrument feel, and an optically-aligned wordmark. Designed to stand alone.</div>
+
+<!-- BEFORE vs AFTER -->
+<div class="row">
+  <div class="card">
+    <div class="lbl before">● Before — current concept #2</div>
+    <svg width="100%" viewBox="0 0 470 140">
+      <path d="M25 80 A44 44 0 0 1 113 80" fill="none" stroke="#1F3A5F" stroke-width="4.5" stroke-linecap="round"/>
+      <g stroke="#1F3A5F" stroke-width="2.6" stroke-linecap="round"><line x1="25" y1="80" x2="31" y2="80"/><line x1="37.9" y1="48.9" x2="42.1" y2="53.1"/><line x1="69" y1="36" x2="69" y2="42"/><line x1="100.1" y1="48.9" x2="95.9" y2="53.1"/><line x1="113" y1="80" x2="107" y2="80"/></g>
+      <line x1="69" y1="80" x2="109.4" y2="73" stroke="#E8552F" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="69" cy="80" r="5" fill="#E8552F"/>
+      <text x="20" y="95" font-size="11" font-weight="600" fill="#6B7886">0</text><text x="101" y="95" font-size="11" font-weight="700" fill="#E8552F">180</text>
+      <text x="150" y="82" font-size="44" font-weight="500" fill="#1F3A5F">One<tspan font-weight="700" fill="#E8552F">80</tspan></text>
+      <text x="151" y="107" font-size="12.5" letter-spacing="6" font-weight="500" fill="#6B7886">ENGLISH</text>
+    </svg>
+  </div>
+  <div class="card">
+    <div class="lbl after">● After — optimized</div>
+    <svg width="100%" viewBox="0 0 500 150">
+      <!-- outer bezel ticks -->
+      <g stroke="#1F3A5F" stroke-width="2.6" stroke-linecap="round">
+        <line x1="24" y1="96" x2="17" y2="96"/>
+        <line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/>
+        <line x1="78" y1="42" x2="78" y2="35"/>
+        <line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/>
+        <line x1="132" y1="96" x2="139" y2="96"/>
+      </g>
+      <!-- navy housing -->
+      <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1F3A5F" stroke-width="6" stroke-linecap="round"/>
+      <!-- coral fill ring (full 0->180 journey) -->
+      <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="5" stroke-linecap="round"/>
+      <!-- needle pegged at 180 -->
+      <line x1="78" y1="96" x2="124" y2="98.5" stroke="#1F3A5F" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="78" cy="96" r="6.5" fill="#E8552F"/>
+      <circle cx="78" cy="96" r="2.3" fill="#fff"/>
+      <!-- labels -->
+      <text x="8" y="116" font-size="12.5" font-weight="600" fill="#6B7886">0</text>
+      <text x="118" y="116" font-size="12.5" font-weight="700" fill="#E8552F">180</text>
+      <!-- wordmark -->
+      <text x="190" y="92" font-size="50" font-weight="500" fill="#1F3A5F">One<tspan font-weight="700" fill="#E8552F">80</tspan></text>
+      <text x="192" y="116" font-size="13" letter-spacing="7" font-weight="500" fill="#6B7886">ENGLISH</text>
+    </svg>
+  </div>
+</div>
+
+<!-- variants -->
+<div class="mini">
+
+  <!-- stacked -->
+  <div class="tile">
+    <svg width="172" height="158" viewBox="0 0 172 158">
+      <g transform="translate(8,2)">
+        <g stroke="#1F3A5F" stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+        <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1F3A5F" stroke-width="6" stroke-linecap="round"/>
+        <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="5" stroke-linecap="round"/>
+        <line x1="78" y1="96" x2="124" y2="98.5" stroke="#1F3A5F" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="78" cy="96" r="6.5" fill="#E8552F"/><circle cx="78" cy="96" r="2.3" fill="#fff"/>
+      </g>
+      <text x="86" y="134" font-size="30" font-weight="500" fill="#1F3A5F" text-anchor="middle">One<tspan font-weight="700" fill="#E8552F">80</tspan></text>
+      <text x="86" y="151" font-size="9" letter-spacing="5" font-weight="500" fill="#6B7886" text-anchor="middle">ENGLISH</text>
+    </svg>
+    <small>Stacked lockup</small>
+  </div>
+
+  <!-- standalone symbol -->
+  <div class="tile">
+    <svg width="124" height="124" viewBox="0 0 164 164">
+      <circle cx="82" cy="82" r="76" fill="none" stroke="#e4e0d8" stroke-width="2"/>
+      <g transform="translate(4,22)">
+        <g stroke="#1F3A5F" stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+        <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1F3A5F" stroke-width="6" stroke-linecap="round"/>
+        <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="5" stroke-linecap="round"/>
+        <line x1="78" y1="96" x2="124" y2="98.5" stroke="#1F3A5F" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="78" cy="96" r="6.5" fill="#E8552F"/><circle cx="78" cy="96" r="2.3" fill="#fff"/>
+      </g>
+    </svg>
+    <small>Standalone symbol</small>
+  </div>
+
+  <!-- app tile -->
+  <div class="tile">
+    <svg width="124" height="124" viewBox="0 0 164 164">
+      <rect x="2" y="2" width="160" height="160" rx="38" fill="#1F3A5F"/>
+      <g transform="translate(4,22)">
+        <g stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity=".9"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+        <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+        <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="5" stroke-linecap="round"/>
+        <line x1="78" y1="96" x2="124" y2="98.5" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="78" cy="96" r="6.5" fill="#E8552F"/><circle cx="78" cy="96" r="2.3" fill="#1F3A5F"/>
+      </g>
+    </svg>
+    <small>App icon (navy)</small>
+  </div>
+
+  <!-- mono -->
+  <div class="tile">
+    <svg width="124" height="124" viewBox="0 0 164 164">
+      <g transform="translate(4,22)" stroke="#1F3A5F" fill="#1F3A5F">
+        <g stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+        <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke-width="6" stroke-linecap="round"/>
+        <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+        <line x1="78" y1="96" x2="124" y2="98.5" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="78" cy="96" r="6.5"/>
+      </g>
+    </svg>
+    <small>Mono (1-color)</small>
+  </div>
+
+  <!-- favicons -->
+  <div class="tile">
+    <div style="display:flex;gap:16px;align-items:flex-end;justify-content:center">
+      <svg width="52" height="52" viewBox="0 0 164 164"><rect width="164" height="164" rx="38" fill="#1F3A5F"/><g transform="translate(4,26)"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="8" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98.5" stroke="#fff" stroke-width="7" stroke-linecap="round"/><circle cx="78" cy="96" r="8" fill="#E8552F"/></g></svg>
+      <svg width="32" height="32" viewBox="0 0 164 164"><rect width="164" height="164" rx="38" fill="#1F3A5F"/><g transform="translate(4,26)"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="8" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98.5" stroke="#fff" stroke-width="7" stroke-linecap="round"/><circle cx="78" cy="96" r="8" fill="#E8552F"/></g></svg>
+      <svg width="16" height="16" viewBox="0 0 164 164"><rect width="164" height="164" rx="38" fill="#1F3A5F"/><g transform="translate(4,30)"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/><line x1="78" y1="96" x2="126" y2="99" stroke="#E8552F" stroke-width="10" stroke-linecap="round"/><circle cx="78" cy="96" r="10" fill="#E8552F"/></g></svg>
+    </div>
+    <small>Favicon 52 · 32 · 16</small>
+  </div>
+
+</div>

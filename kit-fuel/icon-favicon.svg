@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="164" viewBox="0 0 164 164" role="img" aria-label="One80 English favicon">
+  <rect width="164" height="164" rx="38" fill="#1F3A5F"/>
+  <g transform="translate(4,26)">
+    <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+    <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E8552F" stroke-width="8" stroke-linecap="round"/>
+    <line x1="78" y1="96" x2="124" y2="98.5" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="78" cy="96" r="8" fill="#E8552F"/>
+  </g>
+</svg>
