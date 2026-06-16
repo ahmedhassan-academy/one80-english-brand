@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="164" viewBox="0 0 164 164" role="img" aria-label="One80 English app icon">
+  <rect x="2" y="2" width="160" height="160" rx="38" fill="#1A2F6E"/>
+  <g transform="translate(4,22)">
+    <g stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity=".9"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+    <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#FF5A52" stroke-width="5" stroke-linecap="round"/>
+    <line x1="78" y1="96" x2="124" y2="98.5" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="78" cy="96" r="6.5" fill="#FF5A52"/><circle cx="78" cy="96" r="2.3" fill="#1A2F6E"/>
+  </g>
+</svg>
