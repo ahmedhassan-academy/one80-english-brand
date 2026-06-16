@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="140" viewBox="0 0 460 140" role="img" aria-label="One80 English — twin rotation arrows">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap');.wm{font-family:'Poppins','Segoe UI',Arial,sans-serif;}</style>
+  <defs>
+    <marker id="c1a" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="15" refY="10" orient="auto"><path d="M1 2 L18 10 L1 18 Z" fill="#0F9E8E"/></marker>
+    <marker id="c1b" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="15" refY="10" orient="auto"><path d="M1 2 L18 10 L1 18 Z" fill="#27C079"/></marker>
+  </defs>
+  <path d="M82.8 37.2 A34 34 0 0 1 82.8 102.8" fill="none" stroke="#0F9E8E" stroke-width="9" stroke-linecap="round" marker-end="url(#c1a)"/>
+  <path d="M65.2 102.8 A34 34 0 0 1 65.2 37.2" fill="none" stroke="#27C079" stroke-width="9" stroke-linecap="round" marker-end="url(#c1b)"/>
+  <text class="wm" x="150" y="82" font-size="46" font-weight="500" fill="#0E3B3B">One<tspan font-weight="700" fill="#0F9E8E">80</tspan></text>
+  <text class="wm" x="152" y="108" font-size="13.5" letter-spacing="6.5" font-weight="500" fill="#5B6B68">ENGLISH</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="140" viewBox="0 0 460 140" role="img" aria-label="One80 English — the zero with a turnaround arrow">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap');.wm{font-family:'Poppins','Segoe UI',Arial,sans-serif;}</style>
+  <defs>
+    <marker id="c3a" markerUnits="userSpaceOnUse" markerWidth="17" markerHeight="17" refX="13" refY="8.5" orient="auto"><path d="M1 1 L15 8.5 L1 16 Z" fill="#FFFFFF"/></marker>
+  </defs>
+  <circle cx="74" cy="70" r="35" fill="#1B6FB3"/>
+  <circle cx="55" cy="74" r="3.2" fill="#FFFFFF"/>
+  <path d="M55 74 A19 19 0 0 0 93 74" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" marker-end="url(#c3a)"/>
+  <text class="wm" x="150" y="82" font-size="46" font-weight="500" fill="#13293D">One<tspan font-weight="700" fill="#1B6FB3">80</tspan></text>
+  <text class="wm" x="152" y="108" font-size="13.5" letter-spacing="6.5" font-weight="500" fill="#5A6B7D">ENGLISH</text>
+</svg>

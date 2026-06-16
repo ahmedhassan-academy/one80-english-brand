@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="140" viewBox="0 0 460 140" role="img" aria-label="One80 English — 180 degree protractor dial">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap');.wm{font-family:'Poppins','Segoe UI',Arial,sans-serif;}</style>
+  <defs>
+    <marker id="c4a" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="13" refX="10" refY="6.5" orient="auto"><path d="M1 1 L12 6.5 L1 12 Z" fill="#E8552F"/></marker>
+  </defs>
+  <path d="M38 92 A34 34 0 0 0 106 92" fill="none" stroke="#1F3A5F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="38" y1="92" x2="106" y2="92" stroke="#1F3A5F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="38" y1="92" x2="46" y2="92" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="42.6" y1="75" x2="48.7" y2="78.5" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="55" y1="62.6" x2="58.5" y2="68.7" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="72" y1="58" x2="72" y2="66" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="89" y1="62.6" x2="85.5" y2="68.7" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="101.4" y1="75" x2="95.3" y2="78.5" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="106" y1="92" x2="98" y2="92" stroke="#1F3A5F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="72" y1="92" x2="85" y2="65" stroke="#E8552F" stroke-width="4.5" stroke-linecap="round" marker-end="url(#c4a)"/>
+  <circle cx="72" cy="92" r="5" fill="#E8552F"/>
+  <text class="wm" x="150" y="82" font-size="46" font-weight="500" fill="#1F3A5F">One<tspan font-weight="700" fill="#E8552F">80</tspan></text>
+  <text class="wm" x="152" y="108" font-size="13.5" letter-spacing="6.5" font-weight="500" fill="#6B564E">ENGLISH</text>
+</svg>

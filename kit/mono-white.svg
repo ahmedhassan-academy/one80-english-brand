@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="140" viewBox="0 0 460 140" role="img" aria-label="One80 English logo, white">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap');.wm{font-family:'Poppins','Segoe UI',Arial,sans-serif;}</style>
+  <defs>
+    <marker id="ahw2" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="14" refY="9" orient="auto"><path d="M1 2 L16 9 L1 16 Z" fill="#FFFFFF"/></marker>
+  </defs>
+  <path d="M40 56 C 48 106, 92 106, 100 50" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" marker-end="url(#ahw2)"/>
+  <text class="wm" x="150" y="82" font-size="46" font-weight="500" fill="#FFFFFF">One<tspan font-weight="700">80</tspan></text>
+  <text class="wm" x="152" y="108" font-size="13.5" letter-spacing="6.5" font-weight="500" fill="#FFFFFF">ENGLISH</text>
+</svg>

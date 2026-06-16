@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="140" viewBox="0 0 470 140" role="img" aria-label="One80 English logo, white">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&amp;display=swap');.wm{font-family:'Outfit','Segoe UI',Arial,sans-serif;}</style>
+  <circle cx="72" cy="70" r="33" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <g stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><line x1="72" y1="40" x2="72" y2="44"/><line x1="102" y1="70" x2="98" y2="70"/><line x1="72" y1="100" x2="72" y2="96"/><line x1="42" y1="70" x2="46" y2="70"/></g>
+  <line x1="72" y1="70" x2="96.2" y2="56" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="72" y1="70" x2="56.4" y2="79" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="72" cy="70" r="4" fill="#FFFFFF"/>
+  <text class="wm" x="150" y="82" font-size="44" font-weight="500" fill="#FFFFFF">One<tspan font-weight="700">80</tspan></text>
+  <text class="wm" x="151" y="107" font-size="12.5" letter-spacing="6" font-weight="500" fill="#FFFFFF">ENGLISH</text>
+</svg>
