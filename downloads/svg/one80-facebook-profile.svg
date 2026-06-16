@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="One80 English profile picture">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap');.wm{font-family:'Outfit','Segoe UI',Arial,sans-serif;}</style>
+  <rect width="1080" height="1080" fill="#1A2F6E"/>
+  <g transform="translate(236,133) scale(3.9)">
+    <g stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+    <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#FF5A52" stroke-width="5" stroke-linecap="round"/>
+    <line x1="78" y1="96" x2="124" y2="98.5" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="78" cy="96" r="6.5" fill="#FF5A52"/><circle cx="78" cy="96" r="2.3" fill="#1A2F6E"/>
+  </g>
+  <text class="wm" x="540" y="690" font-size="124" font-weight="600" fill="#FFFFFF" text-anchor="middle">One<tspan font-weight="700" fill="#FF5A52">80</tspan></text>
+  <text class="wm" x="540" y="752" font-size="30" letter-spacing="15" font-weight="500" fill="#A9B6E0" text-anchor="middle">ENGLISH</text>
+</svg>

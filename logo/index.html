@@ -92,7 +92,17 @@
     .vgrid,.pal{grid-template-columns:1fr 1fr}
     .mock{grid-template-columns:1fr}.mock .side{display:none}
     section{padding:58px 0}.hero{padding:64px 0}
+    .social{grid-template-columns:1fr}
   }
+  .social{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+  .social .full{grid-column:1/-1}
+  .scard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .scard .pfp{width:148px;height:148px;border-radius:50%;overflow:hidden;box-shadow:0 10px 30px rgba(16,24,58,.18)}
+  .scard .pfp img{width:100%;height:100%;display:block}
+  .scard .cover{width:100%;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(16,24,58,.14)}
+  .scard .cover img{width:100%;display:block}
+  .scard .cap{font:700 14px Outfit;color:var(--navy)}
+  .scard .dim{font:500 12px Outfit;color:var(--muted);margin-top:-8px}
 </style>
 </head>
 <body>
@@ -263,6 +273,33 @@
         <div class="grid3"><div class="k a"></div><div class="k b"></div><div class="k c"></div></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Social media</div>
+    <h2>Ready for Instagram &amp; Facebook.</h2>
+    <p class="lead">Profile pictures sized for the circular crop, plus a Facebook cover with the lockup kept in the mobile safe area.</p>
+    <div class="social">
+      <div class="scard">
+        <div class="pfp"><img src="../downloads/png/one80-instagram-profile-1080.png" alt="Instagram profile picture"></div>
+        <div class="cap">Instagram profile</div>
+        <div class="dim">1080 × 1080</div>
+      </div>
+      <div class="scard">
+        <div class="pfp"><img src="../downloads/png/one80-facebook-profile-1080.png" alt="Facebook profile picture"></div>
+        <div class="cap">Facebook profile</div>
+        <div class="dim">1080 × 1080</div>
+      </div>
+      <div class="scard full">
+        <div class="cover"><img src="../downloads/png/one80-facebook-cover-1640.png" alt="Facebook cover photo"></div>
+        <div class="cap">Facebook cover</div>
+        <div class="dim">1640 × 624</div>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:22px">Download these from the <a href="../downloads/" style="color:var(--red);font-weight:600;text-decoration:none">logo downloads page →</a></p>
   </div>
 </section>
 
