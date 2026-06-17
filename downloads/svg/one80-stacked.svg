@@ -1,12 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="160" viewBox="0 0 180 160" role="img" aria-label="One80 English stacked logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="166" viewBox="0 0 180 166" role="img" aria-label="One80 English stacked logo">
   <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap');.wm{font-family:'Outfit','Segoe UI',Arial,sans-serif;}</style>
-  <g transform="translate(12,-4)">
+  <g transform="translate(12,-14)">
     <g stroke="#1A2F6E" stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
     <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="6" stroke-linecap="round"/>
     <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="5" stroke-linecap="round"/>
     <line x1="78" y1="96" x2="124" y2="98.5" stroke="#1A2F6E" stroke-width="4.5" stroke-linecap="round"/>
     <circle cx="78" cy="96" r="6.5" fill="#E31B23"/><circle cx="78" cy="96" r="2.3" fill="#fff"/>
+    <text class="wm" x="8" y="116" font-size="12.5" font-weight="600" fill="#6B7494">0</text>
+    <text class="wm" x="118" y="116" font-size="12.5" font-weight="700" fill="#E31B23">180</text>
   </g>
-  <text class="wm" x="90" y="130" font-size="31" font-weight="500" fill="#1A2F6E" text-anchor="middle">One<tspan font-weight="700" fill="#E31B23">80</tspan></text>
-  <text class="wm" x="90" y="148" font-size="9.5" letter-spacing="5" font-weight="500" fill="#6B7494" text-anchor="middle">ENGLISH</text>
+  <text class="wm" x="90" y="138" font-size="31" font-weight="500" fill="#1A2F6E" text-anchor="middle">One<tspan font-weight="700" fill="#E31B23">80</tspan></text>
+  <text class="wm" x="90" y="156" font-size="9.5" letter-spacing="5" font-weight="500" fill="#6B7494" text-anchor="middle">ENGLISH</text>
 </svg>
