@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One80 English — Optimized Logo</title>
+<meta name="description" content="The One80 English speedometer mark, rebuilt on an exact geometric grid.">
+<link rel="icon" href="favicon.svg">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  :root{
+    --navy:#13205A; --field:#0E2A6E; --red:#E4222B; --ink:#1b2440;
+    --mute:#6B7494; --line:#e7eaf3; --bg:#f6f7fb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);
+    -webkit-font-smoothing:antialiased;line-height:1.6}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-weight:800;letter-spacing:-.02em;color:var(--navy);line-height:1.15}
+  h2{font-size:clamp(22px,3vw,30px);margin-bottom:6px}
+  .sub{color:var(--mute);font-size:15px;margin-bottom:28px}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+
+  /* hero */
+  .hero{background:var(--field);color:#fff;text-align:center;padding:72px 24px 80px}
+  .hero img{width:min(460px,86vw);display:block;margin:0 auto 26px}
+  .hero p{color:#aeb9de;max-width:540px;margin:0 auto;font-size:16px}
+  .pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:#aeb9de;border:1px solid #2c3f86;border-radius:999px;padding:6px 14px;margin-bottom:28px}
+
+  /* grids */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+  .card .frame{height:180px;display:flex;align-items:center;justify-content:center;padding:22px}
+  .card .frame img{max-width:78%;max-height:100%}
+  .card .lab{padding:12px 16px;border-top:1px solid var(--line);font-size:13px;display:flex;
+    justify-content:space-between;align-items:center}
+  .lab b{font-weight:600;color:var(--navy)}
+  .lab a{color:var(--red);text-decoration:none;font-weight:600;font-size:12px}
+  .lab a:hover{text-decoration:underline}
+  .navy-f{background:var(--field)} .deep-f{background:var(--navy)} .white-f{background:#fff}
+  .check-f{background:#fff;background-image:linear-gradient(45deg,#eef0f7 25%,transparent 25%),linear-gradient(-45deg,#eef0f7 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#eef0f7 75%),linear-gradient(-45deg,transparent 75%,#eef0f7 75%);background-size:18px 18px;background-position:0 0,0 9px,9px -9px,-9px 0}
+
+  /* refinements */
+  .ref{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:8px}
+  .ref div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+  .ref h3{font-size:15px;margin-bottom:6px}
+  .ref p{font-size:14px;color:var(--mute)}
+
+  /* construction */
+  .con{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
+  .con .frame{border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px;display:flex;justify-content:center}
+  .con img{width:100%;max-width:420px}
+  .specs{font-size:14px}
+  .specs li{list-style:none;padding:9px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+  .specs li span:last-child{font-weight:600;color:var(--navy)}
+
+  /* palette + type */
+  .pal{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .sw{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .sw .chip{height:88px} .sw .meta{padding:12px 14px;font-size:13px}
+  .sw .meta b{display:block;color:var(--navy);font-weight:700} .sw .meta code{color:var(--mute);font-size:12px}
+
+  .dl{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+  .dl a{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;text-decoration:none;
+    font-size:14px;font-weight:600;padding:11px 18px;border-radius:11px}
+  .dl a.ghost{background:#fff;color:var(--navy);border:1px solid var(--line)}
+  .dl a:hover{opacity:.9}
+  footer{padding:40px 0 60px;text-align:center;color:var(--mute);font-size:13px}
+  @media(max-width:760px){.con{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="pill">One80 English · brand mark</div>
+  <img src="lockup-reversed.svg" alt="One80 English optimized logo">
+  <p>The speedometer mark, rebuilt from scratch on an exact geometric grid — even ticks, a true tapered needle, and the wordmark engineered in Inter.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">What changed</div>
+    <h2>Optimized like a studio would</h2>
+    <p class="sub">Same idea — the needle pegged at 180°, your English doing a full turnaround. Executed to professional standard.</p>
+    <div class="ref">
+      <div><h3>Exact geometry</h3><p>One reference circle (r = 80), a true 180° arc, hub on the centre line. Every point is computed, not eyeballed.</p></div>
+      <div><h3>Even tick marks</h3><p>Five radial ticks at a clean 30° pitch (150–30°), uniform length and weight — no more hand-drawn spacing.</p></div>
+      <div><h3>A real needle</h3><p>A single tapered blade with a short counter-tail and a ringed hub, pointing cleanly to the 180° reading.</p></div>
+      <div><h3>Engineered wordmark</h3><p>ENGLISH set in Inter 700, optically tracked to sit square under the dome. Consistent stroke logic throughout.</p></div>
+      <div><h3>Built to scale</h3><p>Vector at every size — legible as a 16px favicon, crisp on a billboard. Rounded caps keep it friendly small.</p></div>
+      <div><h3>Disciplined palette</h3><p>Navy, signal red, white. Reversed, light, single-colour and app-tile lockups all drawn from one source.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Construction</div>
+    <h2>Drawn on the grid</h2>
+    <p class="sub">The mark resolves to a circle, an arc, five radials and one needle axis.</p>
+    <div class="con">
+      <div class="frame"><img src="construction.svg" alt="Geometric construction grid"></div>
+      <ul class="specs">
+        <li><span>Reference circle</span><span>r = 80</span></li>
+        <li><span>Gauge arc sweep</span><span>180° · stroke 7</span></li>
+        <li><span>Tick pitch</span><span>30° · ×5</span></li>
+        <li><span>Needle angle</span><span>−10° to 180°</span></li>
+        <li><span>Hub</span><span>r 8 ring · r 3 core</span></li>
+        <li><span>Wordmark</span><span>Inter 700 · +13 track</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Lockups</div>
+    <h2>Every surface covered</h2>
+    <p class="sub">One geometry, drawn for light, dark, single-colour and app contexts.</p>
+    <div class="cards">
+      <div class="card"><div class="frame navy-f"><img src="lockup-reversed.svg" alt=""></div><div class="lab"><b>Reversed</b><a href="lockup-reversed.svg">SVG</a></div></div>
+      <div class="card"><div class="frame white-f"><img src="lockup-light.svg" alt=""></div><div class="lab"><b>Light</b><a href="lockup-light.svg">SVG</a></div></div>
+      <div class="card"><div class="frame navy-f"><img src="symbol-reversed.svg" alt=""></div><div class="lab"><b>Symbol</b><a href="symbol-reversed.svg">SVG</a></div></div>
+      <div class="card"><div class="frame deep-f"><img src="mono-white.svg" alt=""></div><div class="lab"><b>Mono white</b><a href="mono-white.svg">SVG</a></div></div>
+      <div class="card"><div class="frame check-f"><img src="mono-navy.svg" alt=""></div><div class="lab"><b>Mono navy</b><a href="mono-navy.svg">SVG</a></div></div>
+      <div class="card"><div class="frame white-f"><img src="favicon.svg" alt="" style="max-width:120px"></div><div class="lab"><b>App icon</b><a href="favicon.svg">SVG</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Palette &amp; type</div>
+    <h2>The system</h2>
+    <p class="sub">Three colours and one typeface do all the work.</p>
+    <div class="pal">
+      <div class="sw"><div class="chip" style="background:#0E2A6E"></div><div class="meta"><b>Field navy</b><code>#0E2A6E</code></div></div>
+      <div class="sw"><div class="chip" style="background:#13205A"></div><div class="meta"><b>Ink navy</b><code>#13205A</code></div></div>
+      <div class="sw"><div class="chip" style="background:#E4222B"></div><div class="meta"><b>Signal red</b><code>#E4222B</code></div></div>
+      <div class="sw"><div class="chip" style="background:#fff;border-bottom:1px solid var(--line)"></div><div class="meta"><b>Paper</b><code>#FFFFFF</code></div></div>
+      <div class="sw"><div class="chip" style="background:#fff;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:#13205A;border-bottom:1px solid var(--line)">Aa</div><div class="meta"><b>Inter</b><code>400 / 700 / 800</code></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Download</div>
+    <h2>Take the files</h2>
+    <p class="sub">Scalable SVG plus 2000px PNG exports.</p>
+    <div class="dl">
+      <a href="lockup-reversed.svg">Reversed SVG</a>
+      <a href="lockup-light.svg">Light SVG</a>
+      <a href="favicon.svg">App icon SVG</a>
+      <a class="ghost" href="../downloads/png-optimized/one80-lockup-reversed.png">Reversed PNG</a>
+      <a class="ghost" href="../downloads/png-optimized/one80-lockup-light.png">Light PNG</a>
+      <a class="ghost" href="../downloads/png-optimized/one80-favicon.png">Icon PNG</a>
+    </div>
+  </div>
+</section>
+
+<footer>One80 English · optimized brand mark · built on a geometric grid</footer>
+
+</body>
+</html>
