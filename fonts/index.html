@@ -18,9 +18,10 @@
  .rec{position:absolute;top:14px;right:16px;font:700 9px Outfit;letter-spacing:.1em;text-transform:uppercase;background:var(--navy);color:#fff;border-radius:999px;padding:4px 11px}
  .logo{display:flex;align-items:center;gap:20px;min-height:84px}
  .logo svg{flex:none}
+ .wm{display:inline-block}
  .wm .name{font-size:48px;font-weight:500;color:var(--navy);line-height:1}
  .wm .name b{font-weight:700;color:var(--red)}
- .wm .eng{font-size:16px;letter-spacing:6.5px;font-weight:600;color:var(--navy);margin-top:6px}
+ .wm .eng{display:flex;justify-content:space-between;width:100%;font-size:15px;font-weight:700;color:var(--navy);margin-top:7px}
  .meta{margin-top:20px;border-top:1px solid var(--line);padding-top:13px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
  .fname{font:700 15px Outfit;color:var(--navy)}
  .fnote{font:500 12px Outfit;color:var(--muted);text-align:right}
@@ -63,7 +64,7 @@ document.getElementById('grid').innerHTML = fonts.map(o=>`
       ${gauge}
       <div class="wm" style="font-family:'${o.f}',sans-serif">
         <div class="name">One<b>80</b></div>
-        <div class="eng">ENGLISH</div>
+        <div class="eng">${'ENGLISH'.split('').map(c=>`<span>${c}</span>`).join('')}</div>
       </div>
     </div>
     <div class="meta"><span class="fname">${o.f}</span><span class="fnote">${o.t}</span></div>
