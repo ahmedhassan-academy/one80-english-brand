@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="164" height="164" viewBox="0 0 164 164" role="img" aria-label="One80 English favicon">
-  <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;display=swap');.wm{font-family:'Outfit','Segoe UI',Arial,sans-serif;}</style>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');.wm{font-family:'Inter','Segoe UI',Arial,sans-serif;}</style>
   <rect width="164" height="164" rx="38" fill="#1A2F6E"/>
   <g transform="translate(4,14)">
     <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>

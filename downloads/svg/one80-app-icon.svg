@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="164" height="164" viewBox="0 0 164 164" role="img" aria-label="One80 English app icon">
-  <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap');.wm{font-family:'Outfit','Segoe UI',Arial,sans-serif;}</style>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');.wm{font-family:'Inter','Segoe UI',Arial,sans-serif;}</style>
   <rect x="2" y="2" width="160" height="160" rx="38" fill="#1A2F6E"/>
   <g transform="translate(4,12)">
     <g stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" opacity=".9"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
