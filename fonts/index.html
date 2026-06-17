@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One80 English — font comparison</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+ :root{--navy:#1A2F6E;--red:#E31B23;--muted:#6B7494;--line:#E5E9F4;--bg:#F4F6FC}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);font-family:Outfit,Arial,sans-serif;color:#16203A}
+ header{padding:36px 32px 6px;max-width:1100px;margin:0 auto}
+ h1{margin:0;font-size:25px;font-weight:800;color:var(--navy)}
+ .sub{color:var(--muted);font-size:14px;margin:8px 0 0;max-width:680px;line-height:1.5}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:24px 32px 14px;max-width:1100px;margin:0 auto}
+ .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 32px;position:relative;box-shadow:0 1px 3px rgba(16,24,58,.05)}
+ .card.pick{border-color:var(--navy);box-shadow:0 12px 32px rgba(26,47,110,.13)}
+ .rec{position:absolute;top:14px;right:16px;font:700 9px Outfit;letter-spacing:.1em;text-transform:uppercase;background:var(--navy);color:#fff;border-radius:999px;padding:4px 11px}
+ .logo{display:flex;align-items:center;gap:20px;min-height:84px}
+ .logo svg{flex:none}
+ .wm .name{font-size:48px;font-weight:500;color:var(--navy);line-height:1}
+ .wm .name b{font-weight:700;color:var(--red)}
+ .wm .eng{font-size:12.5px;letter-spacing:6px;font-weight:500;color:var(--muted);margin-top:4px}
+ .meta{margin-top:20px;border-top:1px solid var(--line);padding-top:13px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+ .fname{font:700 15px Outfit;color:var(--navy)}
+ .fnote{font:500 12px Outfit;color:var(--muted);text-align:right}
+ .note{padding:6px 32px 46px;color:var(--muted);font-size:12.5px;max-width:1100px;margin:0 auto;line-height:1.55}
+ @media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>One80 English — which font?</h1>
+  <p class="sub">Same fuel-gauge mark, same navy + red. Only the <b>wordmark typeface</b> changes. Compare and pick the one that feels most premium to you.</p>
+</header>
+<div class="grid" id="grid"></div>
+<p class="note"><b>Note:</b> all eight here are free (Google Fonts). The truly premium <b>paid</b> faces (Söhne, GT America, Neue Haas Grotesk) can't be embedded on a free page, but they read very close to <b>Inter</b> / <b>Space Grotesk</b>. Your current logo uses <b>Outfit</b>.</p>
+
+<script>
+const gauge = `<svg viewBox="2 30 152 102" width="118" xmlns="http://www.w3.org/2000/svg" style="font-family:Outfit,sans-serif">
+  <g stroke="#1A2F6E" stroke-width="2.6" stroke-linecap="round"><line x1="24" y1="96" x2="17" y2="96"/><line x1="39.82" y1="57.82" x2="34.87" y2="52.87"/><line x1="78" y1="42" x2="78" y2="35"/><line x1="116.18" y1="57.82" x2="121.13" y2="52.87"/><line x1="132" y1="96" x2="139" y2="96"/></g>
+  <path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="5" stroke-linecap="round"/>
+  <line x1="78" y1="96" x2="124" y2="98.5" stroke="#1A2F6E" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="78" cy="96" r="6.5" fill="#E31B23"/><circle cx="78" cy="96" r="2.3" fill="#fff"/>
+  <text x="8" y="116" font-size="12.5" font-weight="600" fill="#6B7494">0</text>
+  <text x="118" y="116" font-size="12.5" font-weight="700" fill="#E31B23">180</text>
+</svg>`;
+const fonts = [
+  {f:'Outfit',            t:'Current · geometric, friendly'},
+  {f:'Inter',             t:'Neutral, tech-credible · grotesque', pick:1},
+  {f:'Space Grotesk',     t:'Distinctive, modern · grotesque', pick:1},
+  {f:'Hanken Grotesk',    t:'Refined, warm · grotesque'},
+  {f:'Manrope',           t:'Clean, semi-geometric'},
+  {f:'Sora',              t:'Modern geometric-grotesque'},
+  {f:'Schibsted Grotesk', t:'Editorial · grotesque'},
+  {f:'Poppins',           t:'Geometric (very common)'},
+];
+document.getElementById('grid').innerHTML = fonts.map(o=>`
+  <div class="card${o.pick?' pick':''}">
+    ${o.pick?'<span class="rec">Premium pick</span>':''}
+    <div class="logo">
+      ${gauge}
+      <div class="wm" style="font-family:'${o.f}',sans-serif">
+        <div class="name">One<b>80</b></div>
+        <div class="eng">ENGLISH</div>
+      </div>
+    </div>
+    <div class="meta"><span class="fname">${o.f}</span><span class="fnote">${o.t}</span></div>
+  </div>`).join('');
+</script>
+</body>
+</html>
