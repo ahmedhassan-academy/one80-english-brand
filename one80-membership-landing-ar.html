@@ -85,7 +85,8 @@
   @media(max-width:520px){.o80-features{grid-template-columns:1fr}}
 
   /* ── كرت العضوية ── */
-  .o80-courses{display:grid;grid-template-columns:1fr;max-width:470px;margin:46px auto 0}
+  .o80-courses{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:880px;margin:46px auto 0;align-items:start}
+  @media(max-width:760px){.o80-courses{grid-template-columns:1fr;max-width:460px}}
   .o80-course{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 26px 26px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(16,24,58,.05)}
   .o80-course.pop{border-color:var(--red);box-shadow:0 18px 50px rgba(227,27,35,.16)}
   .o80-course .badge{position:absolute;top:-13px;inset-inline-start:26px;background:var(--red);color:#fff;font-size:12px;font-weight:800;padding:6px 14px;border-radius:999px}
@@ -95,13 +96,16 @@
   .o80-course ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:11px}
   .o80-course li{font-size:15px;color:var(--ink);display:flex;gap:10px;align-items:flex-start}
   .o80-course li::before{content:"";flex:0 0 auto;width:18px;height:18px;margin-top:4px;border-radius:50%;background:#EAF7EE url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M1 5l2.5 2.5L9 2' fill='none' stroke='%2317A04A' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/11px no-repeat}
-  /* السعر — لو عايز تعرضه احذف الكومنت ده وحط الرقم الحقيقي
-  .o80-course .price{margin-top:22px;display:flex;align-items:baseline;gap:9px;justify-content:center}
-  .o80-course .price .amt{font-size:34px;font-weight:800;color:var(--navy)}
-  .o80-course .price .per{font-size:14px;color:var(--muted);font-weight:700}
-  */
-  .o80-course .buy{margin-top:24px;text-align:center;background:var(--red);color:#fff;font-weight:800;font-size:17px;padding:16px 0;border-radius:13px;transition:.15s;box-shadow:0 10px 26px rgba(227,27,35,.3)}
-  .o80-course .buy:hover{background:var(--red-deep);color:#fff;transform:translateY(-2px)}
+  .o80-course .price{margin-top:18px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .o80-course .price .amt{font-size:38px;font-weight:800;color:var(--navy);line-height:1}
+  .o80-course .price .cur{font-size:17px;font-weight:800;color:var(--navy)}
+  .o80-course .price .was{font-size:18px;color:var(--faint);text-decoration:line-through;font-weight:700}
+  .o80-course .save{display:inline-block;margin-top:9px;background:#EAF7EE;color:#0f6b32;font-weight:800;font-size:13px;border-radius:999px;padding:5px 12px;align-self:flex-start}
+  .o80-course .inc-h{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);font-weight:800;color:var(--navy);font-size:14.5px}
+  .o80-course .buy{margin-top:22px;text-align:center;background:var(--navy);color:#fff;font-weight:800;font-size:16.5px;padding:16px 0;border-radius:13px;transition:.15s;box-shadow:0 10px 26px rgba(26,47,110,.25)}
+  .o80-course .buy:hover{background:#24409a;color:#fff;transform:translateY(-2px)}
+  .o80-course.pop .buy{background:var(--red);box-shadow:0 10px 26px rgba(227,27,35,.3)}
+  .o80-course.pop .buy:hover{background:var(--red-deep)}
   .o80-course .reassure{text-align:center;font-size:12.5px;color:var(--muted);margin-top:13px}
 
   /* ── شريط رحلة الـ 180 يوم ── */
@@ -190,7 +194,7 @@
     <a class="navlink" href="#how">إزاي بتشتغل</a>
     <a class="navlink" href="#faq">الأسئلة</a>
     <a class="cart" href="/cart/" title="السلة">🛒 <span>السلة</span></a>
-    <a class="enroll" href="/checkout/?add-to-cart=69">اشترك الآن</a>
+    <a class="enroll" href="#membership">اشترك الآن</a>
   </div>
 </div></nav>
 
@@ -201,7 +205,7 @@
     <h1>غيّر إنجليزيك <span class="red">١٨٠ درجة</span></h1>
     <p class="sub">رحلة ممارسة الإنجليزي لمدة ١٨٠ يوم — بتمارس وبتتكلم إنجليزي في يومك الطبيعي، خطوة بخطوة، لحد ما تتكلم بثقة من غير ما تفكر بالعربي الأول.</p>
     <div class="cta">
-      <a class="o80-btn primary" href="/checkout/?add-to-cart=69">اشترك الآن →</a>
+      <a class="o80-btn primary" href="#membership">اشترك الآن →</a>
       <a class="o80-btn ghost" href="#how">إزاي الرحلة بتشتغل</a>
     </div>
     <div class="stats">
@@ -249,29 +253,53 @@
 
 <!-- ░░ العضوية (كرت واحد) ░░ -->
 <section class="o80-sec alt" id="membership"><div class="wrap">
-  <div class="o80-eyebrow">العضوية</div>
-  <h2 class="o80-h2">اشترك في سيستم ممارسة الإنجليزي</h2>
-  <p class="o80-lead">عضوية رحلة الـ ١٨٠ يوم — كل اللي محتاجه علشان تمارس وتتكلم إنجليزي كل يوم.</p>
+  <div class="o80-eyebrow">الباقات</div>
+  <h2 class="o80-h2">اختار باقتك وابدأ تتكلم إنجليزي</h2>
+  <p class="o80-lead">باقتين للممارسة — اختار اللي تناسبك وابدأ رحلتك من النهاردة.</p>
 
   <div class="o80-courses">
+
+    <!-- سوبر جولد — الهيرو -->
     <div class="o80-course pop">
-      <span class="badge">الأكثر اشتراكًا</span>
-      <span class="lvl">رحلة ١٨٠ يوم · ممارسة يومية</span>
-      <h3>العضوية الكاملة</h3>
-      <p class="desc">رحلة ممارسة يومية كاملة مع متابعة، لحد ما تتكلم بثقة.</p>
+      <span class="badge">الأعلى قيمة</span>
+      <span class="lvl">6 شهور · 180 يوم</span>
+      <h3>رحلة الممارسة سوبر جولد</h3>
+      <p class="desc">اتكلم لأكثر من 4000 دقيقة بالإنجليزي.</p>
+      <div class="price"><span class="amt">8300</span><span class="cur">ج</span><span class="was">10700</span></div>
+      <span class="save">وفّر 2400 ج</span>
+      <a class="buy" href="/?add-to-cart=36580">اشترك في سوبر جولد →</a>
+      <div class="inc-h">المدة 6 شهور وتحتوي على:</div>
       <ul>
-        <li>ممارسة يومية منظّمة لمدة ١٨٠ يوم</li>
-        <li>محتوى وتمارين تفاعلية كل يوم</li>
-        <li>متابعة ومدرّب معاك في الرحلة</li>
-        <li>مجتمع تمارس فيه مع طلاب غيرك</li>
-        <li>شهادة في نهاية الرحلة</li>
+        <li>من ٤ ل ٦ طلاب فقط في المحاضرة</li>
+        <li>6 شهور ممارسة إنجليزي</li>
+        <li>180 يوم كلام إنجليزي</li>
+        <li>48 محاضرة تفاعلية في جروب</li>
+        <li>42 مكالمة برايفت</li>
+        <li>30 تاسك تفاعلي برايفت</li>
       </ul>
-      <!-- السعر — لو عايز تعرضه: شيل الكومنت وحط الرقم الحقيقي
-      <div class="price"><span class="amt">٩٩٩</span><span class="per">ج.م / ١٨٠ يوم</span></div>
-      -->
-      <a class="buy" href="/checkout/?add-to-cart=69">اشترك الآن →</a>
-      <p class="reassure">🔒 دفع آمن · تأكيد فوري · ضمان استرجاع</p>
+      <p class="reassure">🔒 دفع آمن · تأكيد فوري</p>
     </div>
+
+    <!-- جولد -->
+    <div class="o80-course">
+      <span class="lvl">3 شهور · 90 يوم</span>
+      <h3>رحلة الممارسة جولد</h3>
+      <p class="desc">اتكلم لأكثر من 2000 دقيقة بالإنجليزي.</p>
+      <div class="price"><span class="amt">4900</span><span class="cur">ج</span><span class="was">6400</span></div>
+      <span class="save">وفّر 1500 ج</span>
+      <a class="buy" href="/?add-to-cart=36579">اشترك في جولد →</a>
+      <div class="inc-h">المدة 3 شهور وتحتوي على:</div>
+      <ul>
+        <li>من ٤ ل ٦ طلاب فقط في المحاضرة</li>
+        <li>3 شهور ممارسة إنجليزي</li>
+        <li>90 يوم كلام إنجليزي</li>
+        <li>24 محاضرة تفاعلية في جروب</li>
+        <li>21 مكالمة برايفت</li>
+        <li>15 تاسك تفاعلي برايفت</li>
+      </ul>
+      <p class="reassure">🔒 دفع آمن · تأكيد فوري</p>
+    </div>
+
   </div>
 
   <!-- شريط رحلة الـ 180 يوم -->
@@ -286,7 +314,7 @@
       <div class="seg"><div class="bar"></div><div class="t">يوم ١٤٤</div><div class="d">بتطوّر</div></div>
       <div class="seg"><div class="bar"></div><div class="t">يوم ١٨٠</div><div class="d">طلاقة</div></div>
     </div>
-    <div style="margin-top:30px"><a class="o80-btn primary" href="/checkout/?add-to-cart=69">اشترك وابدأ من النهاردة →</a></div>
+    <div style="margin-top:30px"><a class="o80-btn primary" href="#membership">اشترك وابدأ من النهاردة →</a></div>
   </div>
 </div></section>
 
@@ -330,7 +358,7 @@
   <h2>جاهز تغيّر إنجليزيك ١٨٠ درجة؟</h2>
   <p>ابدأ رحلة الـ ١٨٠ يوم من النهاردة، وامشي خطوة بخطوة لحد الطلاقة.</p>
   <div class="cta">
-    <a class="o80-btn primary" href="/checkout/?add-to-cart=69">اشترك الآن →</a>
+    <a class="o80-btn primary" href="#membership">اشترك الآن →</a>
     <a class="o80-btn ghost" href="#faq">عندك سؤال؟</a>
   </div>
 </section>
