@@ -224,6 +224,7 @@
   function apply() {
     var root = document.getElementById("one80-checkout") || document.querySelector(".woocommerce");
     if (!root) return;
+    document.body.classList.add("one80-co-page");
     injectCSS();
     var form = document.querySelector("form.checkout");
     if (form) buildChrome(root);
