@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One80 — مخطط تحسين صفحة الدفع</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1A2F6E;--red:#E31B23;--green:#0F6E56;--ink:#16203A;--muted:#8a8f9c;--bg:#EEF1F8;--line:rgba(0,0,0,.1)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo',system-ui,Arial,sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
+  .page{max-width:760px;margin:0 auto;padding:22px 16px 60px}
+  .top{text-align:center;margin-bottom:18px}
+  .top h1{font-size:22px;font-weight:700;color:var(--navy);margin:10px 0 4px}
+  .top p{font-size:14.5px;color:var(--muted);margin:0}
+  .legendkey{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+  .k{font-size:12.5px;border-radius:999px;padding:4px 11px}
+  .k.ok{color:#27500A;background:#EAF3DE}.k.test{color:#633806;background:#FAEEDA}
+  .surface{background:#fff;border-radius:14px;border:0.5px solid var(--line);overflow:hidden;box-shadow:0 6px 24px rgba(20,36,87,.07)}
+  .bar{height:6px;background:var(--navy)}
+  .pad{padding:18px}
+  .logo{display:flex;align-items:center;justify-content:center;gap:9px;margin:4px 0 16px}
+  .logo b{font-family:'Inter';font-size:28px;font-weight:700;letter-spacing:-.5px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.cols{grid-template-columns:1fr}.page{padding:16px 12px 50px}}
+  .enh{position:relative;border:1.5px dashed var(--red);border-radius:9px;padding:11px 12px;margin-bottom:13px;background:#fff}
+  .enh .n,.lg .n{flex:0 0 auto;width:23px;height:23px;border-radius:50%;background:var(--red);color:#fff;font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'Inter'}
+  .enh .n{position:absolute;top:-11px;right:-9px}
+  .fld{border:1px solid rgba(0,0,0,.14);border-radius:8px;padding:9px 12px;font-size:13.5px;margin-bottom:10px}
+  .lbl{font-size:12.5px;color:var(--muted);margin-bottom:4px}
+  .hd{color:var(--navy);font-weight:700;font-size:15.5px;margin:0 0 9px}
+  .chip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--navy);background:#EEF1FB;border-radius:999px;padding:5px 11px}
+  .pill{font-size:11.5px;color:var(--green);background:#E1F5EE;border-radius:999px;padding:3px 9px}
+  .order{border:1px solid rgba(0,0,0,.1);border-radius:10px;padding:12px 13px;margin-bottom:5px}
+  .rowb{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+  .cta{background:var(--red);color:#fff;text-align:center;border-radius:11px;padding:14px;font-size:16.5px;font-weight:700;margin-bottom:13px}
+  .legend{margin-top:22px}
+  .legend h2{font-size:18px;color:var(--navy);font-weight:700;margin:0 0 6px}
+  .lg{display:flex;gap:11px;align-items:flex-start;padding:12px 0;border-top:0.5px solid var(--line)}
+  .lg .t{font-weight:600}.lg .d{color:#55596a}
+  .tag{font-size:12px;border-radius:999px;padding:2px 9px;white-space:nowrap}
+  .tag.ok{color:#27500A;background:#EAF3DE}.tag.test{color:#633806;background:#FAEEDA}
+  .foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:26px}
+  i{vertical-align:-1px}
+</style>
+</head>
+<body>
+<div class="page">
+
+ <div class="top">
+  <svg viewBox="0 0 200 130" width="60" aria-hidden="true"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="7" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="6" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98" stroke="#1A2F6E" stroke-width="5" stroke-linecap="round"/><circle cx="78" cy="96" r="7" fill="#E31B23"/></svg>
+  <h1>مخطط تحسين صفحة الدفع</h1>
+  <p>صفحة الدفع الحالية + 9 تحسينات مبنية على بحث التحويل — كل رقم مشروح تحت</p>
+  <div class="legendkey"><span class="k ok">🟢 مؤكد بالبحث — نبنيه</span><span class="k test">🟠 يُختبر</span></div>
+ </div>
+
+ <div class="surface">
+  <div class="bar"></div>
+  <div class="pad">
+
+   <div class="logo"><svg viewBox="0 0 200 130" width="52" aria-hidden="true"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="7" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="6" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98" stroke="#1A2F6E" stroke-width="5" stroke-linecap="round"/><circle cx="78" cy="96" r="7" fill="#E31B23"/></svg><b><span style="color:#1A2F6E">One</span><span style="color:#E31B23">80</span></b></div>
+
+   <div class="enh"><span class="n">1</span>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+     <span class="chip"><i class="ti ti-lock"></i> دفع آمن</span>
+     <span class="chip"><i class="ti ti-shield-check"></i> ضمان استرجاع</span>
+     <span class="chip"><i class="ti ti-bolt"></i> تأكيد فوري</span>
+     <span class="chip"><i class="ti ti-discount-check"></i> السعر شامل · بدون رسوم</span>
+    </div>
+   </div>
+
+   <div class="cols">
+
+    <div>
+     <p class="hd">طلبك</p>
+     <div class="order">
+      <div class="rowb" style="margin-bottom:9px"><span>رحلة الممارسة سوبر جولد — 6 شهور <span style="color:var(--muted)">×1</span></span><span style="color:var(--red);white-space:nowrap">8,300 ج</span></div>
+      <div class="rowb" style="color:var(--muted);border-top:1px solid rgba(0,0,0,.08);padding-top:9px"><span>الإجمالي</span><span style="color:var(--navy);font-weight:700;font-size:16px">8,300 ج</span></div>
+     </div>
+
+     <div class="enh"><span class="n">4</span>
+      <div style="display:flex;align-items:center;gap:7px;font-size:14px;color:var(--navy)"><i class="ti ti-calculator"></i><span style="font-weight:700">≈ 46 ج / اليوم</span></div>
+      <div style="font-size:12.5px;color:var(--muted);margin-top:3px">على مدار 180 يوم — وفّرت 2400 ج</div>
+     </div>
+
+     <div class="enh"><span class="n">5</span>
+      <div style="color:#E59A00;font-size:14px"><i class="ti ti-star"></i><i class="ti ti-star"></i><i class="ti ti-star"></i><i class="ti ti-star"></i><i class="ti ti-star"></i> <span style="color:var(--ink)">٤.٨ / ٥</span></div>
+      <div style="font-size:12.5px;color:var(--muted);margin-top:3px">آلاف الطلاب بدأوا الرحلة بالفعل</div>
+     </div>
+
+     <div style="display:flex;gap:8px;margin-top:3px"><div class="fld" style="flex:1;margin:0;color:#aaa">كود الخصم</div><div style="background:var(--navy);color:#fff;border-radius:8px;padding:9px 16px;font-size:13.5px">تطبيق</div></div>
+    </div>
+
+    <div>
+     <p class="hd">البريد الإلكتروني</p>
+     <div class="fld">ahmed@gmail.com</div>
+     <div class="enh"><span class="n">2</span>
+      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;color:var(--green)"><i class="ti ti-user-check"></i><span>اتمم طلبك كزائر — من غير ما تعمل حساب</span></div>
+     </div>
+
+     <p class="hd">معلومات التواصل</p>
+     <div class="lbl">الاسم</div><div class="fld">أحمد</div>
+     <div class="enh"><span class="n">3</span>
+      <div class="lbl">الدولة</div>
+      <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:13.5px">مصر</span><span class="pill">تلقائي</span></div>
+      <div style="font-size:12.5px;color:var(--muted);margin-top:6px">شِل/خفّف الحقول غير الضرورية — كل حقل عائق</div>
+     </div>
+     <div class="lbl">رقم الهاتف</div><div class="fld">+20 ………</div>
+     <div class="lbl">رقم واتساب</div><div class="fld">+20 ………</div>
+
+     <p class="hd" style="margin-top:6px">طريقة الدفع</p>
+     <div class="enh"><span class="n">6</span>
+      <div style="display:flex;align-items:flex-start;gap:8px;border:1px solid var(--navy);border-radius:8px;padding:9px 10px;background:#F6F8FE">
+       <i class="ti ti-circle-check" style="color:var(--navy);margin-top:2px"></i>
+       <div><div style="font-size:13.5px;font-weight:600;color:var(--navy)">فودافون كاش · انستا باي · تحويل بنكي</div><div style="font-size:12px;color:var(--muted);margin-top:2px">هنبعتلك التفاصيل ونأكد طلبك فورًا على واتساب</div></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;border:1px solid rgba(0,0,0,.12);border-radius:8px;padding:9px 10px;margin-top:7px">
+       <i class="ti ti-circle" style="color:#bbb"></i><i class="ti ti-credit-card" style="color:var(--navy)"></i><span style="font-size:13.5px">فيزا / ماستر كارد — PayTabs</span>
+      </div>
+     </div>
+
+     <div class="enh" style="border-color:var(--green)"><span class="n" style="background:var(--green)">7</span>
+      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;color:var(--green)"><i class="ti ti-rosette-discount-check"></i><span style="font-weight:600">ضمان استرجاع كامل خلال 7 أيام — من غير أسئلة</span></div>
+     </div>
+
+     <div class="cta"><i class="ti ti-lock"></i> إتمام الطلب</div>
+
+     <div class="enh" style="border-color:#1FA855"><span class="n" style="background:#1FA855">8</span>
+      <div style="display:flex;align-items:center;justify-content:center;gap:7px;font-size:14.5px;color:var(--green);font-weight:600"><i class="ti ti-brand-whatsapp"></i> اطلب أو اسأل على واتساب</div>
+     </div>
+
+     <div class="enh"><span class="n">9</span>
+      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;color:#A32D2D"><i class="ti ti-clock"></i><span>ينتهي عرض الخصم خلال 02 : 14 : 33</span></div>
+      <div style="font-size:12px;color:var(--muted);margin-top:3px">استخدمه فقط لو فيه ديدلاين حقيقي</div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <div class="legend">
+  <h2>ماذا نبني — والدليل وراء كل تحسين</h2>
+  <div class="lg"><span class="n">1</span><div><span class="t">شارات الثقة + "السعر شامل"</span> <span class="d">— رسوم مفاجئة = 39% من سبب ترك العربة (Baymard).</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg"><span class="n">2</span><div><span class="t">الدفع كزائر (بدون حساب)</span> <span class="d">— إجبار إنشاء حساب = 19% من الترك.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg"><span class="n">3</span><div><span class="t">تقليل الحقول (مصر تلقائي)</span> <span class="d">— الأفضل 7–8 حقول؛ تصميم أنظف = +35% تحويل.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg"><span class="n">4</span><div><span class="t">سعر اليوم (≈46 ج/يوم)</span> <span class="d">— تأطير وترسيخ سعري (Ariely: 84% مقابل 32%).</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg"><span class="n">5</span><div><span class="t">دليل اجتماعي (4.8★ + آلاف الطلاب)</span> <span class="d">— يرفع الثقة عند لحظة الدفع.</span> <span class="tag test">يُختبر</span></div></div>
+  <div class="lg"><span class="n">6</span><div><span class="t">الدفع المحلي أولًا + طمأنة</span> <span class="d">— الكروت ~30% فقط من الإنفاق؛ المحافظ/انستاباي أساسية في مصر.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg"><span class="n" style="background:var(--green)">7</span><div><span class="t">ضمان الاسترجاع (عكس المخاطرة)</span> <span class="d">— الضمان الحقيقي يرفع التحويل 18–32%.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg"><span class="n" style="background:#1FA855">8</span><div><span class="t">زر الطلب على واتساب</span> <span class="d">— سوق مصر بيشتري عبر واتساب (مسار بديل).</span> <span class="tag test">يُختبر</span></div></div>
+  <div class="lg"><span class="n">9</span><div><span class="t">عداد تنازلي حقيقي فقط</span> <span class="d">— العداد الوهمي يضرّ الثقة ومخالف قانونيًا (FTC).</span> <span class="tag ok">مؤكد</span></div></div>
+ </div>
+
+ <div class="foot">One80 English — مخطط تحسين صفحة الدفع · مبني على بحث Baymard / Ariely / Unbounce / FTC</div>
+</div>
+</body>
+</html>
