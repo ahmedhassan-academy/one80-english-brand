@@ -1,0 +1,17 @@
+/* ============================================================
+   One80 checkout — RESTORE POINT (saved 2026-06-23 22:xx)
+   This is the checkout styling that was LIVE before the
+   conversion redesign. To roll back the checkout to this state:
+     set meta _kad_blocks_custom_css on BOTH page 11 and
+     cartflows_step 30 to exactly the CSS below, and clear
+     _kad_blocks_footer_custom_js on both.
+   ============================================================ */
+
+#wcf-embed-checkout-form::before{content:"";display:block;height:60px;margin:10px auto 26px;background:url('https://ahmedhassan-academy.github.io/one80-english-brand/downloads/png/one80-horizontal-1600.png') center/contain no-repeat;}
+hr.kt-divider{background-color:#1A2F6E !important;border-color:#1A2F6E !important;}
+#wcf-embed-checkout-form h3{color:#1A2F6E !important;font-weight:800 !important;}
+#place_order{background:#E31B23 !important;color:#fff !important;border:0 !important;border-radius:12px !important;font-weight:800 !important;font-size:18px !important;padding:16px !important;box-shadow:0 10px 26px rgba(227,27,35,.30) !important;}
+#place_order:hover{background:#c5141b !important;}
+.wcf-submit-coupon{background:#1A2F6E !important;color:#fff !important;border-radius:10px !important;}
+#wcf-embed-checkout-form .order-total .amount,#wcf-embed-checkout-form .order-total th{color:#1A2F6E !important;}
+#wcf-embed-checkout-form input:focus,#wcf-embed-checkout-form select:focus,#wcf-embed-checkout-form textarea:focus{border-color:#1A2F6E !important;box-shadow:0 0 0 2px rgba(26,47,110,.15) !important;}
