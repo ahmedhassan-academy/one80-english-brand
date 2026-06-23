@@ -61,6 +61,11 @@
   .o80-hero .art .card .glabel{font-size:13px;color:#A9B6E0;font-weight:800}
   .o80-hero .art .card .gline{font-size:16px;color:#E5E9F4;margin-top:14px;line-height:1.8}
   .o80-hero .art .card .gline b{color:#fff}
+  .o80-hero .art .videobox{width:100%;max-width:480px;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 70px rgba(8,15,40,.45);background:#0b1430}
+  .o80-hero .art .videobox .vplaceholder{aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:radial-gradient(circle at 50% 42%,rgba(255,255,255,.07),transparent 68%)}
+  .o80-hero .art .videobox .vplay{width:74px;height:74px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(227,27,35,.45)}
+  .o80-hero .art .videobox .vplay svg{width:34px;height:34px;fill:#fff;margin-inline-start:3px}
+  .o80-hero .art .videobox .vtext{color:#C7D0EC;font-size:15px;font-weight:800;letter-spacing:.2px}
   @media(max-width:880px){.o80-hero .wrap{grid-template-columns:1fr;padding:52px 24px 58px}.o80-hero .art{order:-1}}
 
   /* ── شريط الثقة ── */
@@ -214,18 +219,17 @@
     </div>
   </div>
   <div class="art">
-    <div class="card">
-      <svg viewBox="0 0 150 124" width="190" role="img" aria-label="مؤشر 180">
-        <path d="M25 90 A50 50 0 0 1 125 90" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
-        <path d="M37 90 A38 38 0 0 1 113 90" fill="none" stroke="#E31B23" stroke-width="4.5" stroke-linecap="round"/>
-        <g stroke="#ffffff" stroke-width="3" stroke-linecap="round"><line x1="25" y1="90" x2="31" y2="90"/><line x1="39.6" y1="54.6" x2="43.9" y2="58.9"/><line x1="75" y1="40" x2="75" y2="46"/><line x1="110.4" y1="54.6" x2="106.1" y2="58.9"/><line x1="125" y1="90" x2="119" y2="90"/></g>
-        <line x1="75" y1="90" x2="113" y2="62" stroke="#E31B23" stroke-width="5" stroke-linecap="round"/>
-        <circle cx="75" cy="90" r="5.5" fill="#E31B23"/>
-        <text x="22" y="106" font-family="Inter" font-size="11" font-weight="700" fill="#A9B6E0">0</text>
-        <text x="115" y="106" font-family="Inter" font-size="11" font-weight="700" fill="#FF6B6F">180</text>
-      </svg>
-      <div class="glabel">مستواك</div>
-      <div class="gline">من <b>«بتكلم شويه»</b> لـ <b>«بتكلم بطلاقة»</b> — بالممارسة كل يوم.</div>
+    <div class="videobox">
+      <!-- ============================================================ -->
+      <!-- الفيديو · VIDEO: الصق كود تضمين Wistia (Inline Embed) هنا       -->
+      <!-- بدلاً من بلوك .vplaceholder التالي.                            -->
+      <!-- PASTE WISTIA INLINE EMBED CODE HERE (replace the .vplaceholder div below) -->
+      <!-- ============================================================ -->
+      <div class="vplaceholder" role="img" aria-label="فيديو قريبًا">
+        <span class="vplay" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        <span class="vtext">الفيديو قريبًا</span>
+      </div>
+      <!-- ▲ نهاية مكان الفيديو · END VIDEO SLOT ▲ -->
     </div>
   </div>
 </div></header>
