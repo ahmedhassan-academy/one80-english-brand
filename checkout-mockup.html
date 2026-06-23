@@ -3,157 +3,192 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>One80 — مخطط تحسين صفحة الدفع</title>
+<title>One80 — صفحة الدفع (نسخة محسّنة)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#1A2F6E;--red:#E31B23;--green:#0F6E56;--ink:#16203A;--muted:#8a8f9c;--bg:#EEF1F8;--line:rgba(0,0,0,.1)}
+  :root{--navy:#1A2F6E;--navy2:#13225a;--red:#E31B23;--green:#0F8A5F;--ink:#1b2440;--muted:#737a90;--line:#e7eaf3;--soft:#f4f7fd;--bg:#eceff7}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo',system-ui,Arial,sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
-  .page{max-width:760px;margin:0 auto;padding:22px 16px 60px}
-  .top{text-align:center;margin-bottom:18px}
-  .top h1{font-size:22px;font-weight:700;color:var(--navy);margin:10px 0 4px}
-  .top p{font-size:14.5px;color:var(--muted);margin:0}
-  .legendkey{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
-  .k{font-size:12.5px;border-radius:999px;padding:4px 11px}
-  .k.ok{color:#27500A;background:#EAF3DE}.k.test{color:#633806;background:#FAEEDA}
-  .surface{background:#fff;border-radius:14px;border:0.5px solid var(--line);overflow:hidden;box-shadow:0 6px 24px rgba(20,36,87,.07)}
-  .bar{height:6px;background:var(--navy)}
-  .pad{padding:18px}
-  .logo{display:flex;align-items:center;justify-content:center;gap:9px;margin:4px 0 16px}
-  .logo b{font-family:'Inter';font-size:28px;font-weight:700;letter-spacing:-.5px}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  @media(max-width:640px){.cols{grid-template-columns:1fr}.page{padding:16px 12px 50px}}
-  .enh{position:relative;border:1.5px dashed var(--red);border-radius:9px;padding:11px 12px;margin-bottom:13px;background:#fff}
-  .enh .n,.lg .n{flex:0 0 auto;width:23px;height:23px;border-radius:50%;background:var(--red);color:#fff;font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'Inter'}
-  .enh .n{position:absolute;top:-11px;right:-9px}
-  .fld{border:1px solid rgba(0,0,0,.14);border-radius:8px;padding:9px 12px;font-size:13.5px;margin-bottom:10px}
-  .lbl{font-size:12.5px;color:var(--muted);margin-bottom:4px}
-  .hd{color:var(--navy);font-weight:700;font-size:15.5px;margin:0 0 9px}
-  .chip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--navy);background:#EEF1FB;border-radius:999px;padding:5px 11px}
-  .pill{font-size:11.5px;color:var(--green);background:#E1F5EE;border-radius:999px;padding:3px 9px}
-  .order{border:1px solid rgba(0,0,0,.1);border-radius:10px;padding:12px 13px;margin-bottom:5px}
-  .rowb{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
-  .cta{background:var(--red);color:#fff;text-align:center;border-radius:11px;padding:14px;font-size:16.5px;font-weight:700;margin-bottom:13px}
-  .legend{margin-top:22px}
-  .legend h2{font-size:18px;color:var(--navy);font-weight:700;margin:0 0 6px}
-  .lg{display:flex;gap:11px;align-items:flex-start;padding:12px 0;border-top:0.5px solid var(--line)}
-  .lg .t{font-weight:600}.lg .d{color:#55596a}
-  .tag{font-size:12px;border-radius:999px;padding:2px 9px;white-space:nowrap}
-  .tag.ok{color:#27500A;background:#EAF3DE}.tag.test{color:#633806;background:#FAEEDA}
-  .foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:26px}
-  i{vertical-align:-1px}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo',system-ui,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 16px 56px}
+  .head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
+  .head .brand{display:flex;align-items:center;gap:9px}
+  .head .brand b{font-family:'Inter';font-size:23px;font-weight:700}
+  .secure{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--green);font-weight:600}
+  .card{background:#fff;border-radius:18px;box-shadow:0 10px 40px rgba(20,36,87,.10);overflow:hidden}
+  .offer{display:flex;align-items:center;justify-content:center;gap:8px;background:#fff4ec;color:#b5430f;font-size:13.5px;font-weight:700;padding:10px;border-bottom:1px solid #f6e2d4;position:relative}
+  .steps{display:flex;align-items:center;justify-content:center;gap:6px;padding:16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);flex-wrap:wrap}
+  .steps .s{display:inline-flex;align-items:center;gap:7px}
+  .steps .dot{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 12px Inter;background:#e9edf8;color:var(--muted)}
+  .steps .s.on .dot{background:var(--navy);color:#fff}.steps .s.on{color:var(--navy);font-weight:700}
+  .steps .ln{width:26px;height:2px;background:var(--line)}
+  .grid{display:grid;grid-template-columns:1.05fr .95fr}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}.wrap{padding:16px 12px 44px}}
+  .col{padding:22px}
+  .col.form{border-inline-start:1px solid var(--line)}
+  @media(max-width:720px){.col.form{border:none;border-top:1px solid var(--line)}}
+  .sec{font-size:15.5px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:9px;margin:0 0 14px}
+  .sec .num{width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font:700 13px Inter;display:flex;align-items:center;justify-content:center}
+  .f{margin-bottom:13px}
+  .f label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:5px}
+  .inp{border:1px solid var(--line);border-radius:11px;padding:12px 14px;font-size:14px;background:#fff;display:flex;align-items:center;justify-content:space-between;min-height:46px}
+  .inp.ph{color:#aab}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .pill{font-size:11.5px;font-weight:600;border-radius:999px;padding:3px 10px}
+  .pill.auto{color:var(--navy);background:#e9edfa}
+  .add{position:relative}
+  .pin{position:absolute;top:-9px;right:-9px;width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;font:700 12px Inter;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 7px rgba(227,27,35,.4);z-index:3}
+  .guest{display:flex;align-items:center;gap:8px;background:#eafaf2;border:1px solid #cdeede;color:#0c7a52;font-size:13px;font-weight:600;border-radius:11px;padding:11px 13px;margin-bottom:13px}
+  .pay{border:1.5px solid var(--line);border-radius:13px;padding:13px;margin-bottom:11px;display:flex;align-items:flex-start;gap:11px;cursor:pointer}
+  .pay.on{border-color:var(--navy);background:#f6f8ff}
+  .pay .rd{width:20px;height:20px;border-radius:50%;border:2px solid #c7cee0;flex:0 0 auto;margin-top:2px;position:relative}
+  .pay.on .rd{border-color:var(--navy)}.pay.on .rd:after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--navy)}
+  .pay .ttl{font-size:14px;font-weight:700;color:var(--ink)}
+  .pay .sub{font-size:12px;color:var(--muted);margin-top:2px}
+  .logos{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
+  .lg{font-size:11px;font-weight:600;border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:#5b6478}
+  /* summary */
+  .sum{background:var(--soft);border-radius:14px;padding:16px}
+  .prod{display:flex;gap:12px;align-items:center}
+  .thumb{width:54px;height:54px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .prod .nm{font-size:14px;font-weight:700;line-height:1.4}
+  .prod .mt{font-size:12px;color:var(--muted)}
+  .sline{display:flex;justify-content:space-between;font-size:13.5px;margin-top:12px}
+  .sline .g{color:var(--green);font-weight:700}
+  .perday{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:11px;padding:9px 12px;margin-top:12px}
+  .perday .v{font-weight:800;color:var(--navy);font-size:15px;font-family:'Cairo'}
+  .total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed #d6ddee;margin-top:13px;padding-top:13px}
+  .total .b{font-size:13px;color:var(--muted)}
+  .total .v{font-size:24px;font-weight:800;color:var(--navy)}
+  .coupon{display:flex;gap:8px;margin-top:13px}
+  .coupon .ci{flex:1;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px;color:#aab;background:#fff}
+  .coupon .cb{background:#e9edf8;color:var(--navy);font-weight:700;border-radius:10px;padding:10px 16px;font-size:13px}
+  .review{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:14px}
+  .stars{color:#f5a623;font-size:14px;letter-spacing:1px}
+  .review p{font-size:12.5px;color:#444;margin:7px 0 0;line-height:1.6}
+  .review .who{font-size:11.5px;color:var(--muted);margin-top:6px}
+  .trust{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:12px;font-weight:600}
+  .trust i{color:var(--navy)}
+  .cta{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--red);color:#fff;font-size:17px;font-weight:800;border-radius:13px;padding:16px;margin-top:14px;box-shadow:0 12px 26px rgba(227,27,35,.32)}
+  .guar{display:flex;align-items:center;justify-content:center;gap:7px;font-size:12.5px;color:var(--green);font-weight:600;margin-top:10px}
+  .wa{display:flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid #1fa855;color:#0c7a52;font-size:14px;font-weight:700;border-radius:13px;padding:13px;margin-top:11px}
+  .paylogos{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:13px}
+  /* legend */
+  .legend{margin-top:20px;background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(20,36,87,.07);padding:18px 20px}
+  .legend h2{font-size:17px;color:var(--navy);font-weight:700;margin:0 0 4px}
+  .legend .hint{font-size:12.5px;color:var(--muted);margin:0 0 8px}
+  .lg2{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--line)}
+  .lg2 .p{flex:0 0 auto;width:23px;height:23px;border-radius:50%;background:var(--red);color:#fff;font:700 12px Inter;display:flex;align-items:center;justify-content:center}
+  .lg2 .t{font-weight:700}.lg2 .d{color:#596079}
+  .tag{font-size:11.5px;border-radius:999px;padding:2px 9px;white-space:nowrap;font-weight:600}
+  .tag.ok{color:#27500A;background:#EAF3DE}.tag.tt{color:#7a4a06;background:#FBEED5}
+  .foot{text-align:center;color:var(--muted);font-size:12px;margin-top:22px}
+  i{vertical-align:-2px}
 </style>
 </head>
 <body>
-<div class="page">
+<div class="wrap">
 
- <div class="top">
-  <svg viewBox="0 0 200 130" width="60" aria-hidden="true"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="7" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="6" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98" stroke="#1A2F6E" stroke-width="5" stroke-linecap="round"/><circle cx="78" cy="96" r="7" fill="#E31B23"/></svg>
-  <h1>مخطط تحسين صفحة الدفع</h1>
-  <p>صفحة الدفع الحالية + 9 تحسينات مبنية على بحث التحويل — كل رقم مشروح تحت</p>
-  <div class="legendkey"><span class="k ok">🟢 مؤكد بالبحث — نبنيه</span><span class="k test">🟠 يُختبر</span></div>
+ <div class="head">
+  <div class="brand">
+   <svg viewBox="0 0 200 130" width="46" aria-hidden="true"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="8" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="7" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98" stroke="#1A2F6E" stroke-width="6" stroke-linecap="round"/><circle cx="78" cy="96" r="8" fill="#E31B23"/></svg>
+   <b><span style="color:#1A2F6E">One</span><span style="color:#E31B23">80</span></b>
+  </div>
+  <span class="secure"><i class="ti ti-lock"></i> دفع آمن ومشفّر SSL</span>
  </div>
 
- <div class="surface">
-  <div class="bar"></div>
-  <div class="pad">
+ <div class="card">
 
-   <div class="logo"><svg viewBox="0 0 200 130" width="52" aria-hidden="true"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#1A2F6E" stroke-width="7" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="6" stroke-linecap="round"/><line x1="78" y1="96" x2="124" y2="98" stroke="#1A2F6E" stroke-width="5" stroke-linecap="round"/><circle cx="78" cy="96" r="7" fill="#E31B23"/></svg><b><span style="color:#1A2F6E">One</span><span style="color:#E31B23">80</span></b></div>
+  <div class="offer add"><span class="pin">9</span><i class="ti ti-clock"></i> ينتهي عرض الخصم خلال <span id="cd" style="font-family:Inter">02:14:33</span></div>
 
-   <div class="enh"><span class="n">1</span>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
-     <span class="chip"><i class="ti ti-lock"></i> دفع آمن</span>
-     <span class="chip"><i class="ti ti-shield-check"></i> ضمان استرجاع</span>
-     <span class="chip"><i class="ti ti-bolt"></i> تأكيد فوري</span>
-     <span class="chip"><i class="ti ti-discount-check"></i> السعر شامل · بدون رسوم</span>
+  <div class="steps">
+   <span class="s on"><span class="dot">1</span> بياناتك</span><span class="ln"></span>
+   <span class="s on"><span class="dot">2</span> الدفع</span><span class="ln"></span>
+   <span class="s"><span class="dot">3</span> تأكيد</span>
+  </div>
+
+  <div class="grid">
+
+   <div class="col form">
+    <div class="sec"><span class="num">1</span> بياناتك</div>
+    <div class="f"><label>البريد الإلكتروني</label><div class="inp">ahmed@gmail.com</div></div>
+    <div class="add"><span class="pin">2</span><div class="guest"><i class="ti ti-user-check"></i> هتكمل كزائر — من غير ما تعمل حساب</div></div>
+    <div class="f"><label>الاسم بالكامل</label><div class="inp">أحمد حسن</div></div>
+    <div class="row2">
+     <div class="f add"><span class="pin">3</span><label>الدولة</label><div class="inp">مصر <span class="pill auto">تلقائي</span></div></div>
+     <div class="f"><label>المدينة <span style="color:#aab">(اختياري)</span></label><div class="inp ph">القاهرة</div></div>
+    </div>
+    <div class="row2">
+     <div class="f"><label>رقم الهاتف</label><div class="inp ph">+20 ××× ××× ××××</div></div>
+     <div class="f"><label>واتساب</label><div class="inp ph">+20 ××× ××× ××××</div></div>
+    </div>
+
+    <div class="sec" style="margin-top:8px"><span class="num">2</span> طريقة الدفع</div>
+    <div class="pay on add"><span class="pin">6</span><span class="rd"></span>
+     <div><div class="ttl">فودافون كاش · انستا باي · تحويل بنكي</div><div class="sub">هنبعتلك التفاصيل ونأكد طلبك فورًا على واتساب</div>
+      <div class="logos"><span class="lg">فودافون كاش</span><span class="lg">انستا باي</span><span class="lg">تحويل</span></div></div>
+    </div>
+    <div class="pay"><span class="rd"></span>
+     <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="ttl">بطاقة فيزا / ماستر كارد</span><i class="ti ti-credit-card" style="color:var(--navy)"></i>
+      <div class="logos"><span class="lg">Visa</span><span class="lg">Mastercard</span><span class="lg">PayTabs</span></div></div>
     </div>
    </div>
 
-   <div class="cols">
-
-    <div>
-     <p class="hd">طلبك</p>
-     <div class="order">
-      <div class="rowb" style="margin-bottom:9px"><span>رحلة الممارسة سوبر جولد — 6 شهور <span style="color:var(--muted)">×1</span></span><span style="color:var(--red);white-space:nowrap">8,300 ج</span></div>
-      <div class="rowb" style="color:var(--muted);border-top:1px solid rgba(0,0,0,.08);padding-top:9px"><span>الإجمالي</span><span style="color:var(--navy);font-weight:700;font-size:16px">8,300 ج</span></div>
+   <div class="col">
+    <div class="sec" style="color:var(--ink)"><i class="ti ti-shopping-bag" style="color:var(--navy)"></i> ملخص طلبك</div>
+    <div class="sum">
+     <div class="prod">
+      <div class="thumb"><svg viewBox="0 0 200 130" width="34" aria-hidden="true"><path d="M24 96 A54 54 0 0 1 132 96" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M37 96 A41 41 0 0 1 119 96" fill="none" stroke="#E31B23" stroke-width="8" stroke-linecap="round"/><circle cx="78" cy="96" r="9" fill="#E31B23"/></svg></div>
+      <div><div class="nm">رحلة الممارسة سوبر جولد</div><div class="mt">6 شهور · 180 يوم · الكمية 1</div></div>
      </div>
+     <div class="sline"><span style="color:var(--muted)">السعر الأصلي</span><span style="text-decoration:line-through;color:#aab">10,700 ج</span></div>
+     <div class="sline"><span style="color:var(--muted)">الخصم</span><span class="g">− 2,400 ج</span></div>
 
-     <div class="enh"><span class="n">4</span>
-      <div style="display:flex;align-items:center;gap:7px;font-size:14px;color:var(--navy)"><i class="ti ti-calculator"></i><span style="font-weight:700">≈ 46 ج / اليوم</span></div>
-      <div style="font-size:12.5px;color:var(--muted);margin-top:3px">على مدار 180 يوم — وفّرت 2400 ج</div>
-     </div>
+     <div class="add"><span class="pin">4</span><div class="perday"><span style="font-size:12.5px;color:var(--muted)">يعني تقريبًا</span><span class="v">≈ 46 ج / اليوم</span></div></div>
 
-     <div class="enh"><span class="n">5</span>
-      <div style="color:#E59A00;font-size:14px"><i class="ti ti-star"></i><i class="ti ti-star"></i><i class="ti ti-star"></i><i class="ti ti-star"></i><i class="ti ti-star"></i> <span style="color:var(--ink)">٤.٨ / ٥</span></div>
-      <div style="font-size:12.5px;color:var(--muted);margin-top:3px">آلاف الطلاب بدأوا الرحلة بالفعل</div>
-     </div>
+     <div class="total"><div><div class="v">8,300 <span style="font-size:15px">ج</span></div><div class="b">شامل · بدون رسوم إضافية</div></div></div>
 
-     <div style="display:flex;gap:8px;margin-top:3px"><div class="fld" style="flex:1;margin:0;color:#aaa">كود الخصم</div><div style="background:var(--navy);color:#fff;border-radius:8px;padding:9px 16px;font-size:13.5px">تطبيق</div></div>
-    </div>
+     <div class="coupon"><span class="ci">كود الخصم</span><span class="cb">تطبيق</span></div>
 
-    <div>
-     <p class="hd">البريد الإلكتروني</p>
-     <div class="fld">ahmed@gmail.com</div>
-     <div class="enh"><span class="n">2</span>
-      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;color:var(--green)"><i class="ti ti-user-check"></i><span>اتمم طلبك كزائر — من غير ما تعمل حساب</span></div>
-     </div>
+     <div class="add"><span class="pin">5</span><div class="review">
+      <div class="stars">★★★★★ <span style="color:#1b2440;font-size:12.5px;font-weight:700">٤.٨ / ٥</span></div>
+      <p>"كنت بتخض أتكلم، دلوقتي بتكلم في الشغل بالإنجليزي عادي."</p>
+      <div class="who">— مريم · من آلاف الطلاب اللي بدأوا الرحلة</div>
+     </div></div>
 
-     <p class="hd">معلومات التواصل</p>
-     <div class="lbl">الاسم</div><div class="fld">أحمد</div>
-     <div class="enh"><span class="n">3</span>
-      <div class="lbl">الدولة</div>
-      <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:13.5px">مصر</span><span class="pill">تلقائي</span></div>
-      <div style="font-size:12.5px;color:var(--muted);margin-top:6px">شِل/خفّف الحقول غير الضرورية — كل حقل عائق</div>
-     </div>
-     <div class="lbl">رقم الهاتف</div><div class="fld">+20 ………</div>
-     <div class="lbl">رقم واتساب</div><div class="fld">+20 ………</div>
+     <div class="add"><span class="pin">1</span><div class="trust"><span><i class="ti ti-lock"></i> دفع آمن</span><span><i class="ti ti-shield-check"></i> ضمان استرجاع</span><span><i class="ti ti-bolt"></i> تأكيد فوري</span></div></div>
 
-     <p class="hd" style="margin-top:6px">طريقة الدفع</p>
-     <div class="enh"><span class="n">6</span>
-      <div style="display:flex;align-items:flex-start;gap:8px;border:1px solid var(--navy);border-radius:8px;padding:9px 10px;background:#F6F8FE">
-       <i class="ti ti-circle-check" style="color:var(--navy);margin-top:2px"></i>
-       <div><div style="font-size:13.5px;font-weight:600;color:var(--navy)">فودافون كاش · انستا باي · تحويل بنكي</div><div style="font-size:12px;color:var(--muted);margin-top:2px">هنبعتلك التفاصيل ونأكد طلبك فورًا على واتساب</div></div>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;border:1px solid rgba(0,0,0,.12);border-radius:8px;padding:9px 10px;margin-top:7px">
-       <i class="ti ti-circle" style="color:#bbb"></i><i class="ti ti-credit-card" style="color:var(--navy)"></i><span style="font-size:13.5px">فيزا / ماستر كارد — PayTabs</span>
-      </div>
-     </div>
+     <div class="cta"><i class="ti ti-lock"></i> إتمام الطلب · 8,300 ج</div>
 
-     <div class="enh" style="border-color:var(--green)"><span class="n" style="background:var(--green)">7</span>
-      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;color:var(--green)"><i class="ti ti-rosette-discount-check"></i><span style="font-weight:600">ضمان استرجاع كامل خلال 7 أيام — من غير أسئلة</span></div>
-     </div>
+     <div class="add"><span class="pin" style="top:-3px">7</span><div class="guar"><i class="ti ti-rosette-discount-check"></i> ضمان استرجاع كامل خلال 7 أيام — من غير أسئلة</div></div>
 
-     <div class="cta"><i class="ti ti-lock"></i> إتمام الطلب</div>
-
-     <div class="enh" style="border-color:#1FA855"><span class="n" style="background:#1FA855">8</span>
-      <div style="display:flex;align-items:center;justify-content:center;gap:7px;font-size:14.5px;color:var(--green);font-weight:600"><i class="ti ti-brand-whatsapp"></i> اطلب أو اسأل على واتساب</div>
-     </div>
-
-     <div class="enh"><span class="n">9</span>
-      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;color:#A32D2D"><i class="ti ti-clock"></i><span>ينتهي عرض الخصم خلال 02 : 14 : 33</span></div>
-      <div style="font-size:12px;color:var(--muted);margin-top:3px">استخدمه فقط لو فيه ديدلاين حقيقي</div>
-     </div>
+     <div class="add"><span class="pin">8</span><div class="wa"><i class="ti ti-brand-whatsapp"></i> اطلب أو اسأل على واتساب</div></div>
     </div>
    </div>
+
   </div>
  </div>
 
  <div class="legend">
-  <h2>ماذا نبني — والدليل وراء كل تحسين</h2>
-  <div class="lg"><span class="n">1</span><div><span class="t">شارات الثقة + "السعر شامل"</span> <span class="d">— رسوم مفاجئة = 39% من سبب ترك العربة (Baymard).</span> <span class="tag ok">مؤكد</span></div></div>
-  <div class="lg"><span class="n">2</span><div><span class="t">الدفع كزائر (بدون حساب)</span> <span class="d">— إجبار إنشاء حساب = 19% من الترك.</span> <span class="tag ok">مؤكد</span></div></div>
-  <div class="lg"><span class="n">3</span><div><span class="t">تقليل الحقول (مصر تلقائي)</span> <span class="d">— الأفضل 7–8 حقول؛ تصميم أنظف = +35% تحويل.</span> <span class="tag ok">مؤكد</span></div></div>
-  <div class="lg"><span class="n">4</span><div><span class="t">سعر اليوم (≈46 ج/يوم)</span> <span class="d">— تأطير وترسيخ سعري (Ariely: 84% مقابل 32%).</span> <span class="tag ok">مؤكد</span></div></div>
-  <div class="lg"><span class="n">5</span><div><span class="t">دليل اجتماعي (4.8★ + آلاف الطلاب)</span> <span class="d">— يرفع الثقة عند لحظة الدفع.</span> <span class="tag test">يُختبر</span></div></div>
-  <div class="lg"><span class="n">6</span><div><span class="t">الدفع المحلي أولًا + طمأنة</span> <span class="d">— الكروت ~30% فقط من الإنفاق؛ المحافظ/انستاباي أساسية في مصر.</span> <span class="tag ok">مؤكد</span></div></div>
-  <div class="lg"><span class="n" style="background:var(--green)">7</span><div><span class="t">ضمان الاسترجاع (عكس المخاطرة)</span> <span class="d">— الضمان الحقيقي يرفع التحويل 18–32%.</span> <span class="tag ok">مؤكد</span></div></div>
-  <div class="lg"><span class="n" style="background:#1FA855">8</span><div><span class="t">زر الطلب على واتساب</span> <span class="d">— سوق مصر بيشتري عبر واتساب (مسار بديل).</span> <span class="tag test">يُختبر</span></div></div>
-  <div class="lg"><span class="n">9</span><div><span class="t">عداد تنازلي حقيقي فقط</span> <span class="d">— العداد الوهمي يضرّ الثقة ومخالف قانونيًا (FTC).</span> <span class="tag ok">مؤكد</span></div></div>
+  <h2>التحسينات المضافة — وماذا نبني</h2>
+  <p class="hint">الأرقام الحمراء على التصميم فوق = الأماكن دي بالظبط · 🟢 مؤكد بالبحث · 🟠 يُختبر</p>
+  <div class="lg2"><span class="p">1</span><div><span class="t">شارات الثقة + "السعر شامل"</span> <span class="d">— رسوم مفاجئة = 39% من سبب ترك العربة.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">2</span><div><span class="t">الدفع كزائر بدون حساب</span> <span class="d">— إجبار إنشاء حساب = 19% من الترك.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">3</span><div><span class="t">تقليل الحقول (مصر تلقائي · المدينة اختياري)</span> <span class="d">— الأفضل 7–8 حقول؛ تصميم أنظف = +35% تحويل.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">4</span><div><span class="t">سعر اليوم (≈46 ج/يوم)</span> <span class="d">— تأطير سعري يخلّي السعر يبان أصغر (Ariely 84% مقابل 32%).</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">5</span><div><span class="t">رأي طالب ⭐ جنب زر الدفع</span> <span class="d">— من أقوى أماكن الدليل الاجتماعي تحويلًا.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">6</span><div><span class="t">الدفع المحلي أولًا + طمأنة</span> <span class="d">— الكروت ~30% فقط من الإنفاق في مصر؛ المحافظ/انستاباي أساسية.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">7</span><div><span class="t">ضمان الاسترجاع (عكس المخاطرة)</span> <span class="d">— الضمان الحقيقي يرفع التحويل 18–32%.</span> <span class="tag ok">مؤكد</span></div></div>
+  <div class="lg2"><span class="p">8</span><div><span class="t">زر الطلب على واتساب</span> <span class="d">— سوق مصر بيشتري عبر واتساب (مسار بديل).</span> <span class="tag tt">يُختبر</span></div></div>
+  <div class="lg2"><span class="p">9</span><div><span class="t">عداد تنازلي حقيقي فقط</span> <span class="d">— العداد الوهمي يضرّ الثقة ومخالف قانونيًا (FTC).</span> <span class="tag ok">مؤكد</span></div></div>
  </div>
 
- <div class="foot">One80 English — مخطط تحسين صفحة الدفع · مبني على بحث Baymard / Ariely / Unbounce / FTC</div>
+ <div class="foot">One80 English — نسخة محسّنة من صفحة الدفع · مبنية على بحث Baymard / Ariely / Unbounce / FTC</div>
 </div>
+
+<script>
+(function(){var t=8073;var el=document.getElementById('cd');setInterval(function(){t=t>0?t-1:0;var h=String(Math.floor(t/3600)).padStart(2,'0'),m=String(Math.floor(t%3600/60)).padStart(2,'0'),s=String(t%60).padStart(2,'0');if(el)el.textContent=h+':'+m+':'+s;},1000);})();
+</script>
 </body>
 </html>
